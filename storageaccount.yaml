@@ -1,0 +1,15 @@
+apiVersion : storage.k8s.io/v1
+kind : Storage
+
+metadata :
+name : managed-premium-retain-sc
+PROVISIONER : kubernetes.io/azure-disk
+RECLAIMPOLICY : Retain
+VOLUMEBINDINGMODE : WaitForFirstConsumer
+ALLOWVOLUMEEXPANSION : true
+storageaccounttype : Premium_LRS
+kind: managed
+
+
+
+spec :

@@ -1,0 +1,11 @@
+appVersion : v1
+kind : PersistentVolumeClaim
+metadata :
+ -name : azure-managed-disk-pvc
+spec :
+  ACCESS MODES: 
+  - ReadWriteOnce
+  STORAGECLASS : managed-premium-retain-sc
+  resources:
+  requests:
+  storage: 5Gi
